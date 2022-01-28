@@ -97,10 +97,10 @@ nav ul{
         font-size: 1.5rem;
         text-align: center;
         }
-    /* .container{
-        grid-template-rows:repeat(3 , 20vw);
-        grid-template-columns:repeat(3 , 20vw);
-    } */
+    .container{
+        grid-template-rows:repeat(20vw);
+        grid-template-columns:repeat(20vw);
+    }
     .info{
         text-align: center;
     }
