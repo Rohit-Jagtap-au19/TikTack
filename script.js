@@ -28,7 +28,7 @@ const checkwin = () =>{
            document.querySelector('.info').innerText ="WINNER " + boxtexts[e[0]].innerText 
            Gameover = true
            document.querySelector('.imagebox').getElementsByTagName('img')[0].style.width = "200px"
-           document.querySelector('.line').style.width = "32vw" 
+           document.querySelector('.line').style.width = "32vw"
            document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
            music.play()
 
