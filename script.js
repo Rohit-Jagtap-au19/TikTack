@@ -62,6 +62,11 @@ Array.from(boxes).forEach(element => {
             if (!Gameover) {
                 document.getElementsByClassName('info')[0].innerText = "Turn for " + turn;
             }
+            else{
+                // Reject all the clicks after game over
+                turn = ""
+                audioturn.pause()
+            }
         }
     })
 })
