@@ -14,11 +14,13 @@ nav{
     display: flex;
     align-items: center;
     font-family: 'Festive', cursive;
+    letter-spacing: 1.5px;
     padding:0 12px
 }
 
 nav ul{
     list-style-type: none;
+    
 }
 .gamecontainer{
     display: flex;
@@ -84,6 +86,7 @@ nav ul{
     position: absolute;
     transition: width 1s ease-in-out;
 }
+
 @media  screen and (max-width:800px)
 {
     .gamecontainer{

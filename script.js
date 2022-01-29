@@ -31,8 +31,7 @@ const checkwin = () => {
             document.querySelector('.line').style.width = "32vw"
             document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
             music.play()
-
-            // auto restes game after 4 sec
+            // auto restes game after 6 sec
 
             setTimeout(() => {
                 let boxtexts = document.querySelectorAll('.boxtext');
@@ -45,7 +44,7 @@ const checkwin = () => {
                 document.getElementsByClassName('info')[0].innerText = "Turn for " + turn;
                 document.querySelector('.imagebox').getElementsByTagName('img')[0].style.width = "0px"
                 music.pause()
-            }, 4000);
+            }, 6000);   
         }
     })
 }
@@ -62,7 +61,7 @@ Array.from(boxes).forEach(element => {
             if (!Gameover) {
                 document.getElementsByClassName('info')[0].innerText = "Turn for " + turn;
             }
-            else{
+            else {
                 // Reject all the clicks after game over
                 turn = ""
                 audioturn.pause()
@@ -70,7 +69,8 @@ Array.from(boxes).forEach(element => {
         }
     })
 })
-// add onclick listner to reset button
+
+// add onclick listner to reset button  
 reset.addEventListener('click', () => {
     let boxtexts = document.querySelectorAll('.boxtext');
     Array.from(boxtexts).forEach(element => {
