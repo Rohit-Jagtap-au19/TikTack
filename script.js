@@ -1,8 +1,8 @@
 console.log("Welcome To Tic Tac Toe")
 
-let music = new Audio("game.mp3")
-let audioturn = new Audio("Ting.mp3")
-let gameover = new Audio("win.mp3")
+let music = new Audio("/assets/game.mp3")
+let audioturn = new Audio("/assets/Ting.mp3")
+let gameover = new Audio("/assets/win.mp3")
 let turn = "X";
 let Gameover = false
 
